@@ -6,7 +6,7 @@ import { ContainerX, ContainerY } from './Container'
 
 const Grid = ({ children }) => {
   return (
-    <ul className="grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3 md:grid-cols-4">
+    <ul className="grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3">
       {children}
     </ul>
   )
@@ -29,27 +29,28 @@ const Item = ({ parent, item }) => {
             className="rounded-lg"
             src={`/images/${slugify(item.name)}.jpg`}
             layout="responsive"
-            width="80"
-            height="80"
+            width="500"
+            height="500"
           />
-          <h3 className="mt-2 text-xl font-semibold text-gray-800">
-            {item.name}
-          </h3>
+          <h3 className="mt-2 text-xl font-semibold">{item.name}</h3>
         </a>
       </Link>
     </li>
   )
 }
 
-export const Section = ({ section, horizontal }) => {
+export const Section = ({ section, horizontal, dark }) => {
+  const bgColor = dark ? 'bg-black' : 'bg-white'
+  const textColor = dark ? 'text-white' : 'text-gray-800'
+
   const categories = section.categories
     .slice(0, 5)
     .map((category, idx) => <Item key={idx} parent={section} item={category} />)
 
   return (
-    <ContainerX>
-      <ContainerY className="text-gray-800">
-        <div className="py-6">
+    <ContainerX className={bgColor}>
+      <ContainerY className={textColor}>
+        <div className="pb-6">
           <div className="flex items-baseline justify-between pb-2">
             <h2 className="text-3xl font-bold">{section.name}</h2>
             <Link href={`/${slugify(section.name)}`}>
@@ -60,7 +61,9 @@ export const Section = ({ section, horizontal }) => {
               </a>
             </Link>
           </div>
-          <p className="font-medium text-gray-500">{section.description}</p>
+          <p className={`font-medium ${dark ? 'text-white' : 'text-gray-500'}`}>
+            {section.description}
+          </p>
         </div>
         {horizontal ? (
           <HorizontalGrid>{categories}</HorizontalGrid>

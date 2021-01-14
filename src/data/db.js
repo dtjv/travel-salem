@@ -14,8 +14,7 @@ export const db = {
   sections: {
     food: {
       name: 'Places to eat',
-      description:
-        'Enjoy the all things food. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.',
+      description: 'Enjoy the all things food and drink...',
       categories: [
         { name: 'Breweries' },
         { name: 'Wineries' },
@@ -29,9 +28,16 @@ export const db = {
         { name: 'International Cuisine' },
       ],
     },
-    stay: {},
-    todo: {},
-    services: {},
+    stay: {
+      name: 'Places to stay',
+      description: '',
+      categories: [
+        { name: 'Bed & Breakfast' },
+        { name: 'Campgrounds' },
+        { name: 'Hotels' },
+        { name: 'Resorts' },
+        { name: 'RV Parks' },
+      ],
+    },
   },
-  Xsections: [],
 }

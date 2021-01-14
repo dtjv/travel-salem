@@ -22,6 +22,7 @@ export default function HomePage() {
         <Hero />
         <main>
           <Section key="food" section={sections.food} horizontal />
+          <Section key="stay" section={sections.stay} dark />
         </main>
         <Footer />
       </div>
