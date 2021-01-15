@@ -13,6 +13,7 @@ export const db = {
       categories: [
         { name: 'About' },
         { name: 'Blog' },
+        { name: 'Services' },
         { name: 'Jobs' },
         { name: 'Press' },
         { name: 'Membership' },
@@ -32,7 +33,8 @@ export const db = {
     },
     food: {
       name: 'Places to eat',
-      description: 'Enjoy the all things food and drink...',
+      description:
+        "The flavors of Oregon's bounty are found throughout the Mid-Willamette Valley. Fresh produce, vine-ripened fruits, award-winning wine, beer and craft ciders are offered at a variety of eateries.",
       categories: [
         { name: 'Breweries' },
         { name: 'Wineries' },
@@ -48,7 +50,8 @@ export const db = {
     },
     stay: {
       name: 'Places to stay',
-      description: '',
+      description:
+        'Enjoy lodging options close to downtown historic districts or further out in the heart of Oregon wine country.',
       categories: [
         { name: 'Bed & Breakfast' },
         { name: 'Campgrounds' },
@@ -58,7 +61,7 @@ export const db = {
       ],
     },
     services: {
-      name: 'Services',
+      name: 'Local Businesses',
       description: '',
       categories: [
         { name: 'Contractors' },
@@ -67,13 +70,14 @@ export const db = {
         { name: 'Medical' },
         { name: 'Pets' },
         { name: 'Real Estate' },
-        { name: 'Transportation' },
+        { name: 'Transit' },
         { name: 'Utilities' },
       ],
     },
     activities: {
       name: 'Things to do',
-      description: '',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       categories: [
         { name: 'Art & Museums' },
         { name: 'Entertainment' },

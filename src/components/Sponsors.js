@@ -25,7 +25,7 @@ export const Sponsors = ({ sponsors }) => {
       <ContainerY>
         <div className="pb-8 text-center">
           <h2 className="text-3xl font-bold tracking-tight">
-            Thanks to our sponsors!
+            Support our sponsors!
           </h2>
         </div>
         <div className="flex items-center justify-between px-4">

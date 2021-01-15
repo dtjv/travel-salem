@@ -20,19 +20,57 @@ export const Nav = () => (
             </a>
           </Link>
         </div>
-        <div className="flex items-center space-x-4">
-          <input
-            type="text"
-            className="hidden bg-gray-100 border-gray-300 sm:block rounded-md focus:border-black focus:ring-0"
-            placeholder="Search"
-          />
+        <div className="md:hidden">
+          <Link href="/" className="md:hidden">
+            <a>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </a>
+          </Link>
+        </div>
+        <div className="items-center hidden md:flex space-x-4">
           <Link href="/">
-            <a className="font-medium text-gray-500 hover:text-blue-600">
+            <a>
+              <svg
+                className="w-6 h-6 text-gray-500 hover:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
+            </a>
+          </Link>
+          <Link href="/">
+            <a className="font-medium text-gray-500 hover:text-gray-800">
+              Services
+            </a>
+          </Link>
+          <Link href="/">
+            <a className="font-medium text-gray-500 hover:text-gray-800">
               Blog
             </a>
           </Link>
           <Link href="/">
-            <a className="font-medium text-gray-500 hover:text-blue-600">
+            <a className="font-medium text-gray-500 hover:text-gray-800">
               About
             </a>
           </Link>

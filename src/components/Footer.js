@@ -32,7 +32,7 @@ export const Footer = ({ sections }) => {
     <footer className="text-sm border-t sm:text-base bg-gray-50">
       <ContainerX>
         <ContainerY className="divide-y divide-gray-200 space-y-8">
-          <ul className="grid gap-x-2 gap-y-10 sm:gap-x-4 md:gap-x-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+          <ul className="grid gap-x-2 gap-y-10 sm:gap-x-4 md:gap-x-6 grid-cols-2 sm:grid-cols-3 xl:grid-cols-6">
             {renderSections}
           </ul>
           <div className="pt-8 sm:flex sm:items-center sm:justify-between">
