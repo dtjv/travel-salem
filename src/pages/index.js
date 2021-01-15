@@ -6,6 +6,7 @@ import { Hero } from '../components/Hero'
 import { Section } from '../components/Section'
 import { Sponsors } from '../components/Sponsors'
 import { Activities } from '../components/Activities'
+import { Services } from '../components/Services'
 import { Footer } from '../components/Footer'
 
 import { db } from '../data/db'
@@ -26,6 +27,7 @@ export default function HomePage() {
           <Section section={sections.food} horizontal />
           <Activities section={sections.activities} />
           <Section section={sections.stay} dark />
+          <Services section={sections.services} />
           <Sponsors sponsors={sections.sponsors} />
         </main>
         <Footer sections={sections} />
