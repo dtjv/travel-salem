@@ -13,9 +13,8 @@ const Item = ({ parent, item }) => {
           <Image
             className="rounded-lg"
             src={`/images/${slugify(item.name)}.jpg`}
-            layout="responsive"
             width="500"
-            height="500"
+            height="375"
           />
           <h3 className="mt-2 text-xl font-semibold">{item.name}</h3>
         </a>
