@@ -4,6 +4,8 @@ import { Nav } from '../components/Nav'
 import { Meta } from '../components/Meta'
 import { Hero } from '../components/Hero'
 import { Section } from '../components/Section'
+import { Sponsors } from '../components/Sponsors'
+import { Activities } from '../components/Activities'
 import { Footer } from '../components/Footer'
 
 import { db } from '../data/db'
@@ -21,8 +23,10 @@ export default function HomePage() {
         <Nav />
         <Hero />
         <main>
-          <Section key="food" section={sections.food} horizontal />
-          <Section key="stay" section={sections.stay} dark />
+          <Section section={sections.food} horizontal />
+          <Section section={sections.stay} dark />
+          <Activities section={sections.activities} />
+          <Sponsors sponsors={sections.sponsors} />
         </main>
         <Footer />
       </div>

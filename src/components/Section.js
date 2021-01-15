@@ -3,22 +3,7 @@ import Image from 'next/image'
 import slugify from '@sindresorhus/slugify'
 
 import { ContainerX, ContainerY } from './Container'
-
-const Grid = ({ children }) => {
-  return (
-    <ul className="grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3">
-      {children}
-    </ul>
-  )
-}
-
-const HorizontalGrid = ({ children }) => {
-  return (
-    <ul className="overflow-x-auto grid grid-cols-custom hide-scrollbar grid-rows-1 gap-x-4 grid-flow-col">
-      {children}
-    </ul>
-  )
-}
+import { HorizontalGrid, Grid } from './Grid'
 
 const Item = ({ parent, item }) => {
   return (
