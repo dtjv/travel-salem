@@ -5,15 +5,10 @@ export const db = {
       url: '/',
       message: "Read Oregon's COVID-19 response",
     },
-    {
-      id: 'qewp',
-      url: '/',
-      message: 'Experience the Salem region safely',
-    },
   ],
   sections: {
     company: {
-      name: 'Company',
+      name: 'Travel Salem',
       description: '',
       categories: [
         { name: 'About' },
