@@ -1,6 +1,7 @@
 {
   "name": "travelsalem.com",
   "version": "0.1.0",
+  "description":"A design concept for Travel Salem running Next.js and TailwindCSS.",
   "private": true,
   "scripts": {
     "format": "prettier -w .",
