@@ -36,7 +36,7 @@ export const Section = ({ section, horizontal, dark }) => {
       <ContainerY className={textColor}>
         <div className="pb-6">
           <div className="flex items-baseline justify-between pb-2">
-            <h2 className="text-3xl font-bold">{section.name}</h2>
+            <h2 className="text-2xl font-bold sm:text-3xl">{section.name}</h2>
             <Link href={`/${slugify(section.name)}`}>
               <a>
                 <p className="text-lg font-semibold sm:text-xl">
