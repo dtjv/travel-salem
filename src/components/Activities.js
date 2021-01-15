@@ -5,9 +5,9 @@ import slugify from '@sindresorhus/slugify'
 import { ContainerX, ContainerY } from './Container'
 import { Grid } from './Grid'
 
-const Item = ({ parent, item }) => {
+const Item = ({ item }) => {
   return (
-    <Link href={`/${slugify(parent.name)}/${slugify(item.name)}`}>
+    <Link href="/">
       <a>
         <li className="flex flex-col items-center px-4 py-8 border rounded-lg hover:shadow-md">
           <Image
@@ -29,7 +29,7 @@ export const Activities = ({ section }) => {
 
   return (
     <ContainerX>
-      <ContainerY className="text-gray-800">
+      <ContainerY className="text-gray-800 border-t border-gray-200">
         <div className="pb-6">
           <div className="flex items-baseline justify-between pb-2">
             <h2 className="text-2xl font-bold sm:text-3xl">{section.name}</h2>

@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import slugify from '@sindresorhus/slugify'
 
 import { ContainerX, ContainerY } from './Container'
 
@@ -14,7 +13,7 @@ export const Footer = ({ sections }) => {
   ].map((section, i) => {
     const categories = section.categories.map((category, j) => (
       <li key={j}>
-        <Link href={`/${slugify(section.name)}/${slugify(category.name)}`}>
+        <Link href="/">
           <a className="hover:text-gray-600"> {category.name} </a>
         </Link>
       </li>

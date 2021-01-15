@@ -7,7 +7,7 @@ import { HorizontalGrid } from './Grid'
 export const Sponsors = ({ sponsors }) => {
   const renderSponsors = sponsors.map((sponsor, idx) => (
     <li key={idx}>
-      <Link href={sponsor.url}>
+      <Link href={sponsor.url} target="_blank">
         <a>
           <Image
             src={`/images/logos/${sponsor.logo}`}

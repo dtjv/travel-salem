@@ -5,10 +5,10 @@ import slugify from '@sindresorhus/slugify'
 import { ContainerX, ContainerY } from './Container'
 import { HorizontalGrid, Grid } from './Grid'
 
-const Item = ({ parent, item }) => {
+const Item = ({ item }) => {
   return (
     <li>
-      <Link href={`/${slugify(parent.name)}/${slugify(item.name)}`}>
+      <Link href="/">
         <a>
           <Image
             className="rounded-lg"
@@ -37,7 +37,7 @@ export const Section = ({ section, horizontal, dark }) => {
         <div className="pb-6">
           <div className="flex items-baseline justify-between pb-2">
             <h2 className="text-2xl font-bold sm:text-3xl">{section.name}</h2>
-            <Link href={`/${slugify(section.name)}`}>
+            <Link href="/">
               <a>
                 <p className="text-lg font-semibold sm:text-xl">
                   View all -&gt;
