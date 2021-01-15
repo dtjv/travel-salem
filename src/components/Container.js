@@ -9,5 +9,7 @@ export const ContainerX = ({ children, ...props }) => (
 )
 
 export const ContainerY = ({ children, ...props }) => (
-  <div className={`py-6 sm:py-8 ${props.className ?? ''}`}>{children}</div>
+  <div className={`py-8 sm:py-12 lg:py-14 ${props.className ?? ''}`}>
+    {children}
+  </div>
 )
