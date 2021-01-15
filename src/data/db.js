@@ -12,6 +12,29 @@ export const db = {
     },
   ],
   sections: {
+    company: {
+      name: 'Company',
+      description: '',
+      categories: [
+        { name: 'About' },
+        { name: 'Blog' },
+        { name: 'Jobs' },
+        { name: 'Press' },
+        { name: 'Membership' },
+        { name: 'Contact Us' },
+      ],
+    },
+    support: {
+      name: 'Support',
+      description: '',
+      categories: [
+        { name: 'COVID-19 Update' },
+        { name: 'FAQ' },
+        { name: 'Help Center' },
+        { name: 'Privacy' },
+        { name: 'Terms' },
+      ],
+    },
     food: {
       name: 'Places to eat',
       description: 'Enjoy the all things food and drink...',
@@ -39,8 +62,22 @@ export const db = {
         { name: 'RV Parks' },
       ],
     },
+    services: {
+      name: 'Services',
+      description: '',
+      categories: [
+        { name: 'Contractors' },
+        { name: 'Education' },
+        { name: 'Financial' },
+        { name: 'Medical' },
+        { name: 'Pets' },
+        { name: 'Real Estate' },
+        { name: 'Transportation' },
+        { name: 'Utilities' },
+      ],
+    },
     activities: {
-      name: 'Activities to do',
+      name: 'Things to do',
       description: '',
       categories: [
         { name: 'Art & Museums' },

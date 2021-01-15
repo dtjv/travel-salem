@@ -24,11 +24,11 @@ export default function HomePage() {
         <Hero />
         <main>
           <Section section={sections.food} horizontal />
-          <Section section={sections.stay} dark />
           <Activities section={sections.activities} />
+          <Section section={sections.stay} dark />
           <Sponsors sponsors={sections.sponsors} />
         </main>
-        <Footer />
+        <Footer sections={sections} />
       </div>
     </>
   )
