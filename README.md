@@ -14,8 +14,8 @@ bugs
 ([screenshots](https://github.com/dtjv/travelsalem.com/tree/main/screenshots)).
 
 This project is my redesign concept - simplifying the presentation and
-navigation. I choose to use [Next.js](https://nextjs.org) for it's static
-generation and image optimization.
+navigation. I chose to build the site using [Next.js](https://nextjs.org) for
+it's static site generation and image optimization features.
 
 ## License
 
