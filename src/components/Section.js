@@ -15,6 +15,7 @@ const Item = ({ item }) => {
             src={`/images/${slugify(item.name)}.jpg`}
             width="500"
             height="375"
+            alt={`image for ${item.name}`}
           />
           <h3 className="mt-2 text-xl font-semibold">{item.name}</h3>
         </a>

@@ -94,98 +94,122 @@ export const db = {
       {
         url: 'https://www.brookswine.com/',
         logo: 'brooks-logo.jpg',
+        alt: 'brooks wine logo',
       },
       {
         url: 'https://www.chemeketa.edu/',
         logo: 'chemeketa-comm-college-logo.jpg',
+        alt: 'chemeketa college logo',
       },
       {
         url: 'https://www.cityofsalem.net/',
         logo: 'city-of-salem-logo.jpg',
+        alt: 'city of salem logo',
       },
       {
         url: 'https://www.grandhotelsalem.com/',
         logo: 'grand-hotel-logo.jpg',
+        alt: 'grand hotel logo',
       },
       {
         url: 'https://willamette.edu/arts/hfma/',
         logo: 'hallie-ford-museum-of-art-logo.jpg',
+        alt: 'hallie ford museums logo',
       },
       {
         url: 'https://www.hilton.com/en/hampton/',
         logo: 'hampton-inn-suites-logo.jpg',
+        alt: 'hampton inn suites logo',
       },
       {
         url: 'https://heeheeillahee.com/',
         logo: 'hee-hee-logo.png',
+        alt: 'hee hee illahee logo',
       },
       {
         url: 'https://www.holidayinn.com/',
         logo: 'holiday-inn-logo.jpg',
+        alt: 'holiday inn logo',
       },
       {
         url: 'https://wou.edu/',
         logo: 'hoopla-3x3-logo.png',
+        alt: 'hoopla 3x3 logo',
       },
       {
         url: 'https://www.huggins.com/',
         logo: 'huggins-insurance-logo.jpg',
+        alt: 'huggins insurance logo',
       },
       {
         url: 'https://leftcoastwine.com/',
         logo: 'left-coast-logo.png',
+        alt: 'left coast logo',
       },
       {
         url: 'https://www.co.marion.or.us/',
         logo: 'marion-county-logo.jpg',
+        alt: 'marion county logo',
       },
       {
         url: 'https://oregonstatefair.org/',
         logo: 'oregon-state-fair-logo.jpg',
+        alt: 'oregon state fair logo',
       },
       {
         url: 'https://www.pioneertrustbank.com/',
         logo: 'pioneer-trust-bank-logo.jpg',
+        alt: 'pioneer trust bank logo',
       },
       {
         url: 'https://www.co.polk.or.us/',
         logo: 'polk-county-logo.jpg',
+        alt: 'polk county logo',
       },
       {
         url: 'https://www.salemconventioncenter.org/',
         logo: 'salem-convention-center-logo.jpg',
+        alt: 'salem convention center logo',
       },
       {
         url: 'https://www.salemelectric.com/',
         logo: 'salem-electric-logo.jpg',
+        alt: 'salem electric logo',
       },
       {
         url: 'https://www.salemhealth.org/',
         logo: 'salem-health-logo.jpg',
+        alt: 'salem health logo',
       },
       {
         url: 'https://www.spiritmountain.com/',
         logo: 'spirit-mountain-casino-logo.jpg',
+        alt: 'spirit mountain casino logo',
       },
       {
         url: 'https://www.usbank.com/index.html',
         logo: 'usbank-logo.jpg',
+        alt: 'usbank logo',
       },
       {
         url: 'https://www.amtrak.com/home.html',
         logo: 'amtrak-logo.jpg',
+        alt: 'amtrak logo',
       },
       {
         url: 'https://willamette.edu/',
         logo: 'willamette-university-logo.jpg',
+        alt: 'willamette university logo',
       },
       {
         url: 'http://www.withnellrent.com/',
         logo: 'withnell-car-rental-logo.jpg',
+        alt: 'withnell car rental logo',
       },
       {
         url: 'https://wou.edu/',
         logo: 'wou-salem-logo.jpg',
+        alt: 'wou salem logo',
       },
     ],
   },

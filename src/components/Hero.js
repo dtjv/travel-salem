@@ -6,7 +6,12 @@ export const Hero = () => {
   return (
     <div className="relative">
       <div className="relative h-96">
-        <Image src="/images/vineyard.jpg" layout="fill" objectFit="cover" />
+        <Image
+          src="/images/vineyard.jpg"
+          layout="fill"
+          objectFit="cover"
+          alt="image of vineyard"
+        />
       </div>
       <ContainerX className="absolute top-0">
         <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl pt-52">

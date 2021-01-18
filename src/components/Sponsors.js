@@ -14,6 +14,7 @@ export const Sponsors = ({ sponsors }) => {
             layout="responsive"
             width="500"
             height="500"
+            alt={sponsor.alt}
           />
         </a>
       </Link>

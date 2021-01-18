@@ -16,6 +16,7 @@ export const Nav = () => (
                 width="55"
                 height="55"
                 className="rounded-full"
+                alt="travel salem logo"
               />
             </a>
           </Link>

@@ -1,4 +1,3 @@
-//import Image from 'next/image'
 import { Messages } from '../components/Messages'
 import { Nav } from '../components/Nav'
 import { Meta } from '../components/Meta'
