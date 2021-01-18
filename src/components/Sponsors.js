@@ -8,7 +8,7 @@ export const Sponsors = ({ sponsors }) => {
   const renderSponsors = sponsors.map((sponsor, idx) => (
     <li key={idx}>
       <Link href={sponsor.url} target="_blank">
-        <a>
+        <a aria-label={`link to ${sponsor.url}`}>
           <Image
             src={`/images/logos/${sponsor.logo}`}
             layout="responsive"

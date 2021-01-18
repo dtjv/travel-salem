@@ -7,9 +7,9 @@ import { Grid } from './Grid'
 
 const Item = ({ item }) => {
   return (
-    <Link href="/">
-      <a>
-        <li>
+    <li>
+      <Link href="/">
+        <a aria-label={`link to ${item.name}`}>
           <div className="flex">
             <div className="flex-shrink-0">
               <div className="flex items-center justify-center w-10 h-10 p-1.5 sm:p-2 md:p-4 bg-indigo-200 rounded-full sm:w-14 sm:h-14 md:w-16 md:h-16">
@@ -28,9 +28,9 @@ const Item = ({ item }) => {
               </p>
             </div>
           </div>
-        </li>
-      </a>
-    </Link>
+        </a>
+      </Link>
+    </li>
   )
 }
 

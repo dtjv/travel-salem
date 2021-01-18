@@ -7,19 +7,23 @@ import { Grid } from './Grid'
 
 const Item = ({ item }) => {
   return (
-    <Link href="/">
-      <a>
-        <li className="flex flex-col items-center px-4 py-8 bg-white border border-gray-300 rounded-lg hover:shadow-md">
-          <Image
-            src={`/images/icons/${slugify(item.name)}.svg`}
-            width="40"
-            height="40"
-            alt={`icon for ${item.name}`}
-          />
-          <p className="mt-2 text-base font-semibold sm:text-md">{item.name}</p>
-        </li>
-      </a>
-    </Link>
+    <li>
+      <Link href="/">
+        <a aria-label={`link to ${item.name}`}>
+          <div className="flex flex-col items-center px-4 py-8 bg-white border border-gray-300 rounded-lg hover:shadow-md">
+            <Image
+              src={`/images/icons/${slugify(item.name)}.svg`}
+              width="40"
+              height="40"
+              alt={`icon for ${item.name}`}
+            />
+            <p className="mt-2 text-base font-semibold sm:text-md">
+              {item.name}
+            </p>
+          </div>
+        </a>
+      </Link>
+    </li>
   )
 }
 
@@ -35,7 +39,7 @@ export const Activities = ({ section }) => {
           <div className="flex items-baseline justify-between pb-2">
             <h2 className="text-2xl font-bold sm:text-3xl">{section.name}</h2>
             <Link href="/">
-              <a>
+              <a aria-label="link to view all activities">
                 <p className="text-lg font-semibold sm:text-xl">
                   View all -&gt;
                 </p>

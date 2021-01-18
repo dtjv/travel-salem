@@ -10,7 +10,7 @@ export const Nav = () => (
       <ContainerX className="flex items-center justify-between">
         <div className="flex">
           <Link href="/">
-            <a>
+            <a aria-label="link to home page">
               <Image
                 src="/images/logo.jpg"
                 width="55"
@@ -23,7 +23,7 @@ export const Nav = () => (
         </div>
         <div className="md:hidden">
           <Link href="/" className="md:hidden">
-            <a>
+            <a aria-label="link to display menu items">
               <svg
                 className="w-6 h-6"
                 fill="none"
@@ -43,7 +43,7 @@ export const Nav = () => (
         </div>
         <div className="items-center hidden md:flex space-x-4">
           <Link href="/">
-            <a>
+            <a aria-label="button to search">
               <svg
                 className="w-6 h-6 text-gray-500 hover:text-gray-800"
                 fill="none"
@@ -61,17 +61,26 @@ export const Nav = () => (
             </a>
           </Link>
           <Link href="/">
-            <a className="font-medium text-gray-500 hover:text-gray-800">
+            <a
+              aria-label="link to travelsalem services"
+              className="font-medium text-gray-500 hover:text-gray-800"
+            >
               Services
             </a>
           </Link>
           <Link href="/">
-            <a className="font-medium text-gray-500 hover:text-gray-800">
+            <a
+              aria-label="link to travelsalem blog"
+              className="font-medium text-gray-500 hover:text-gray-800"
+            >
               Blog
             </a>
           </Link>
           <Link href="/">
-            <a className="font-medium text-gray-500 hover:text-gray-800">
+            <a
+              aria-label="link to travelsalem about page"
+              className="font-medium text-gray-500 hover:text-gray-800"
+            >
               About
             </a>
           </Link>

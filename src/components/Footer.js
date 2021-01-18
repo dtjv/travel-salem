@@ -14,15 +14,19 @@ export const Footer = ({ sections }) => {
     const categories = section.categories.map((category, j) => (
       <li key={j}>
         <Link href="/">
-          <a className="hover:text-gray-600"> {category.name} </a>
+          <a
+            aria-label={`link to ${category.name} category`}
+            className="hover:text-gray-600"
+          >
+            {' '}
+            {category.name}{' '}
+          </a>
         </Link>
       </li>
     ))
     return (
       <li key={i} className="space-y-5">
-        <h4 className="font-semibold text-gray-800 uppercase">
-          {section.name}
-        </h4>
+        <p className="font-semibold text-gray-800 uppercase">{section.name}</p>
         <ul className="text-gray-500 space-y-4"> {categories} </ul>
       </li>
     )
@@ -46,10 +50,15 @@ export const Footer = ({ sections }) => {
               </p>
             </div>
             <div className="items-center mt-4 sm:flex sm:mt-0">
+              <label id="signup-email-label" htmlFor="signup-email-input">
+                Signup for Newsletter
+              </label>
               <input
+                id="signup-email-input"
                 type="text"
                 className="block mr-2 bg-gray-100 border border-black rounded-md focus:border-gray-500 focus:bg-white"
                 placeholder="Enter your email"
+                aria-labelledby="signup-email-label"
               />
               <button className="mt-4 sm:mt-0 flex items-center px-4 py-2.5 text-white bg-black rounded-md">
                 Subscribe

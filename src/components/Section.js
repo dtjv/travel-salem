@@ -9,7 +9,7 @@ const Item = ({ item }) => {
   return (
     <li>
       <Link href="/">
-        <a>
+        <a aria-label={`link to ${item.name}`}>
           <Image
             className="rounded-lg"
             src={`/images/${slugify(item.name)}.jpg`}
@@ -39,7 +39,7 @@ export const Section = ({ section, horizontal, dark }) => {
           <div className="flex items-baseline justify-between pb-2">
             <h2 className="text-2xl font-bold sm:text-3xl">{section.name}</h2>
             <Link href="/">
-              <a>
+              <a aria-label={`link to view all items in ${section.name}`}>
                 <p className="text-lg font-semibold sm:text-xl">
                   View all -&gt;
                 </p>
