@@ -1,7 +1,7 @@
 export const Grid = ({ children, className, ...props }) => {
   return (
     <ul
-      className={`grid grid-cols-2 gap-x-4 gap-y-6 sm:grid-cols-3 ${className}`}
+      className={`grid grid-cols-2 gap-x-2 sm:gap-x-4 gap-y-6 sm:grid-cols-3 ${className}`}
       {...props}
     >
       {children}

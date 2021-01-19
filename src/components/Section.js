@@ -10,13 +10,17 @@ const Item = ({ item }) => {
     <li>
       <Link href="/">
         <a aria-label={`link to ${item.name}`}>
-          <Image
-            className="rounded-lg"
-            src={`/images/${slugify(item.name)}.jpg`}
-            width="500"
-            height="375"
-            alt={`image for ${item.name}`}
-          />
+          <div>
+            <Image
+              className="rounded-lg"
+              quality={100}
+              src={`/images/${slugify(item.name)}.jpg`}
+              alt={`image for ${item.name}`}
+              layout="responsive"
+              width={1920}
+              height={1440}
+            />
+          </div>
           <h3 className="mt-2 text-xl font-semibold">{item.name}</h3>
         </a>
       </Link>
