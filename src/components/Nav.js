@@ -11,7 +11,9 @@ export const Nav = () => (
         <div className="flex">
           <Link href="/">
             <a aria-label="link to home page">
-              <p className="text-3xl font-bold font-display">Travel Salem </p>
+              <p className="text-3xl font-bold md:text-5xl font-display">
+                Travel Salem{' '}
+              </p>
             </a>
           </Link>
         </div>
