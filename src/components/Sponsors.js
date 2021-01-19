@@ -12,8 +12,8 @@ export const Sponsors = ({ sponsors }) => {
           <Image
             src={`/images/logos/${sponsor.logo}`}
             layout="responsive"
-            width="500"
-            height="500"
+            width="100"
+            height="100"
             alt={sponsor.alt}
           />
         </a>
@@ -38,22 +38,6 @@ export const Sponsors = ({ sponsors }) => {
           >
             {renderSponsors}
           </HorizontalGrid>
-          {/*
-          <svg
-            className="w-40 h-40 font-bold"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M9 5l7 7-7 7"
-            ></path>
-          </svg>
-          */}
         </div>
       </ContainerY>
     </ContainerX>

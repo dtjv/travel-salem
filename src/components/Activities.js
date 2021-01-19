@@ -14,6 +14,8 @@ const Item = ({ item }) => {
               src={`/images/icons/${slugify(item.name)}.svg`}
               alt={`icon for ${item.name}`}
               className="w-10 h-10"
+              width="40"
+              height="40"
             />
             <p className="mt-2 text-base font-semibold sm:text-md">
               {item.name}

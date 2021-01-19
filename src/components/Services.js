@@ -16,6 +16,8 @@ const Item = ({ item }) => {
                   className="w-10 h-10"
                   src={`/images/icons/${slugify(item.name)}.svg`}
                   alt={`icon for ${item.name}`}
+                  width="40"
+                  height="40"
                 />
               </div>
             </div>
