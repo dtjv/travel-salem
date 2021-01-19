@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import slugify from '@sindresorhus/slugify'
 
 import { ContainerX, ContainerY } from './Container'
@@ -11,11 +10,10 @@ const Item = ({ item }) => {
       <Link href="/">
         <a aria-label={`link to ${item.name}`}>
           <div className="flex flex-col items-center px-4 py-8 bg-white border border-gray-300 rounded-lg hover:shadow-md">
-            <Image
+            <img
               src={`/images/icons/${slugify(item.name)}.svg`}
-              width="40"
-              height="40"
               alt={`icon for ${item.name}`}
+              className="w-10 h-10"
             />
             <p className="mt-2 text-base font-semibold sm:text-md">
               {item.name}
