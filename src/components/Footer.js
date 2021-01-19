@@ -40,7 +40,7 @@ export const Footer = ({ sections }) => {
             {renderSections}
           </ul>
           <div className="pt-8 sm:flex sm:items-center sm:justify-between">
-            <div className="mr-4">
+            <div className="mr-6">
               <p className="font-semibold text-gray-800 uppercase">
                 Subscribe to our newsletter
               </p>
@@ -50,7 +50,11 @@ export const Footer = ({ sections }) => {
               </p>
             </div>
             <div className="items-center mt-4 sm:flex sm:mt-0">
-              <label id="signup-email-label" htmlFor="signup-email-input">
+              <label
+                className="hidden"
+                id="signup-email-label"
+                htmlFor="signup-email-input"
+              >
                 Signup for Newsletter
               </label>
               <input
