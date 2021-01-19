@@ -11,13 +11,7 @@ export const Nav = () => (
         <div className="flex">
           <Link href="/">
             <a aria-label="link to home page">
-              <Image
-                src="/images/logo.jpg"
-                width="55"
-                height="55"
-                className="rounded-full"
-                alt="travel salem logo"
-              />
+              <p className="text-3xl font-bold font-display">Travel Salem </p>
             </a>
           </Link>
         </div>
