@@ -1,10 +1,7 @@
 import Head from 'next/head'
-import { site } from '../data/site'
 
-export const Meta = (props) => {
-  const title = props.title ?? site.title
-  const url = props.url ?? site.url
-  const description = props.description ?? site.description
+export const Meta = ({ site }) => {
+  const { title, url, description } = site
 
   return (
     <Head>

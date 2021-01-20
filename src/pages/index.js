@@ -1,35 +1,34 @@
+import { Meta } from '../components/Meta'
 import { Messages } from '../components/Messages'
 import { Nav } from '../components/Nav'
-import { Meta } from '../components/Meta'
 import { Hero } from '../components/Hero'
-import { Section } from '../components/Section'
+import { Food } from '../components/Food'
+import { Todo } from '../components/Todo'
+import { Stay } from '../components/Stay'
+import { Vendors } from '../components/Vendors'
 import { Sponsors } from '../components/Sponsors'
-import { Activities } from '../components/Activities'
-import { Services } from '../components/Services'
 import { Footer } from '../components/Footer'
 
-import { db } from '../data/db'
+import { data } from '../data'
 
-const { messages, sections } = db
+const { messages, food, todo, stay, vendors, sponsors } = data.sections
 
-// Hero and main are children to the Layout. All else go into Layout.
-// Each component adds the appropriate Container - X and/or Y.
 export default function HomePage() {
   return (
     <>
-      <Meta />
+      <Meta site={data.site} />
       <div className="mx-auto antialiased">
         <Messages messages={messages} />
         <Nav />
         <Hero />
         <main>
-          <Section section={sections.food} horizontal />
-          <Activities section={sections.activities} />
-          <Section section={sections.stay} dark />
-          <Services section={sections.services} />
-          <Sponsors sponsors={sections.sponsors} />
+          <Food section={food} />
+          <Todo section={todo} />
+          <Stay section={stay} />
+          <Vendors section={vendors} />
+          <Sponsors section={sponsors} />
         </main>
-        <Footer sections={sections} />
+        <Footer data={data} />
       </div>
     </>
   )

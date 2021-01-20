@@ -2,7 +2,6 @@ import Link from 'next/link'
 import slugify from '@sindresorhus/slugify'
 
 import { ContainerX, ContainerY } from './Container'
-import { Grid } from './Grid'
 
 const Item = ({ item }) => {
   return (
@@ -24,7 +23,7 @@ const Item = ({ item }) => {
             <div className="flex flex-col justify-center px-2 sm:px-4">
               <p className="font-semibold text-md md:text-lg">{item.name}</p>
               <p className="text-sm font-medium text-gray-500 md:text-base">
-                15 vendors
+                {`${item.count} vendors`}
               </p>
             </div>
           </div>
@@ -34,10 +33,8 @@ const Item = ({ item }) => {
   )
 }
 
-export const Services = ({ section }) => {
-  const categories = section.categories.map((category, idx) => (
-    <Item key={idx} parent={section} item={category} />
-  ))
+export const Vendors = ({ section }) => {
+  const links = section.links.map((link, idx) => <Item key={idx} item={link} />)
 
   return (
     <ContainerX className="mb-4">
@@ -48,7 +45,9 @@ export const Services = ({ section }) => {
           </div>
           <p className="font-medium text-gray-500">{section.description}</p>
         </div>
-        <Grid className="md:gap-y-10">{categories}</Grid>
+        <ul className="grid grid-cols-2 gap-x-2 sm:gap-x-4 md:gap-y-10 gap-y-6 sm:grid-cols-3">
+          {links}
+        </ul>
       </ContainerY>
     </ContainerX>
   )

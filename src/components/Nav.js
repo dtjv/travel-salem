@@ -1,9 +1,7 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 import { ContainerX } from './Container'
 
-//<a className="text-lg font-semibold tracking-wide">travelsalem</a>
 export const Nav = () => (
   <nav>
     <div className="py-3">
@@ -12,7 +10,7 @@ export const Nav = () => (
           <Link href="/">
             <a aria-label="link to home page">
               <p className="text-3xl font-bold md:text-5xl font-display">
-                Travel Salem{' '}
+                Travel Salem
               </p>
             </a>
           </Link>
