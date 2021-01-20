@@ -13,7 +13,7 @@ const Item = ({ item }) => {
             layout="responsive"
             width="100"
             height="100"
-            alt={item.logo.replaceAll('-', ' ').slice(0, -4)}
+            alt={item.logo.replace(/-/g, ' ').slice(0, -4)}
           />
         </a>
       </Link>
