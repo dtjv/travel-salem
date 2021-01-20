@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import { ContainerX, ContainerY } from './Container'
+import { SocialIcons } from './icons/Social'
 
 export const Footer = ({ data }) => {
   const { food, todo, stay, vendors, company, support } = data.sections
@@ -78,23 +79,7 @@ export const Footer = ({ data }) => {
               />
               <p className="ml-1">2021 Travel Salem</p>
             </div>
-            <ul className="flex items-center mt-4 sm:mt-0 space-x-3 sm:space-x-6">
-              {data.site.social.map((social, idx) => (
-                <li key={idx}>
-                  <Link href={social.url}>
-                    <a aria-label={`link to ${social.url}`}>
-                      <img
-                        src={`/images/icons/social/${social.icon}.svg`}
-                        alt={`icon for ${social.url}`}
-                        className="w-6 h-6"
-                        width="24"
-                        height="24"
-                      />
-                    </a>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <SocialIcons />
           </div>
         </ContainerY>
       </ContainerX>

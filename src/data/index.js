@@ -3,28 +3,6 @@ export const data = {
     title: 'Travel Salem (demo)',
     url: 'https://travelsalem.vercel.app',
     description: 'A concept UI for Travel Salem',
-    social: [
-      {
-        icon: 'instagram',
-        url: 'https://www.instagram.com/travelsalem/',
-      },
-      {
-        icon: 'twitter',
-        url: 'https://twitter.com/TravelSalem',
-      },
-      {
-        icon: 'pinterest',
-        url: 'https://www.pinterest.com/travelsalem/',
-      },
-      {
-        icon: 'youtube',
-        url: 'https://www.youtube.com/user/TravelSalem',
-      },
-      {
-        icon: 'facebook',
-        url: 'https://www.facebook.com/TravelSalem?_rdr=TravelSalemWebSite',
-      },
-    ],
   },
   sections: {
     messages: [
