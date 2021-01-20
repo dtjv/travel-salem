@@ -66,7 +66,7 @@ export const data = {
       ],
     },
     vendors: {
-      name: 'Local Businesses',
+      name: 'Industry',
       description: '',
       links: [
         { name: 'Contractors', count: 5 },

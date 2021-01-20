@@ -47,7 +47,7 @@ export const Todo = ({ section }) => {
           </div>
           <p className="font-medium text-gray-500">{section.description}</p>
         </div>
-        <ul className="grid grid-cols-2 gap-x-2 sm:gap-x-4 gap-y-6 sm:grid-cols-3">
+        <ul className="grid grid-cols-2 gap-x-2 sm:gap-x-4 lg:gap-x-8 gap-y-6 sm:grid-cols-3">
           {links}
         </ul>
       </ContainerY>

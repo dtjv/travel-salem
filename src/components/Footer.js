@@ -9,16 +9,16 @@ export const Footer = ({ data }) => {
     (section, i) => {
       return (
         <li key={i} className="space-y-5">
-          <p className="font-semibold text-gray-800 uppercase">
+          <p className="font-semibold text-gray-900 uppercase">
             {section.name}
           </p>
-          <ul className="text-gray-500 space-y-4">
+          <ul className="text-gray-600 space-y-4">
             {section.links.map((link, idx) => (
               <li key={idx}>
                 <Link href="/">
                   <a
                     aria-label={`link to ${link.name}`}
-                    className="hover:text-gray-600"
+                    className="hover:underline"
                   >
                     {link.name}
                   </a>
@@ -32,10 +32,10 @@ export const Footer = ({ data }) => {
   )
 
   return (
-    <footer className="text-sm border-t sm:text-base bg-gray-50">
+    <footer className="text-sm bg-gray-100 border-t border-gray-300">
       <ContainerX>
         <ContainerY className="divide-y divide-gray-200 space-y-8">
-          <ul className="grid gap-x-2 gap-y-10 sm:gap-x-4 md:gap-x-6 grid-cols-2 sm:grid-cols-3 xl:grid-cols-6">
+          <ul className="grid gap-x-2 gap-y-10 sm:gap-x-4 md:gap-x-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
             {sections}
           </ul>
           <div className="pt-8 sm:flex sm:items-center sm:justify-between">

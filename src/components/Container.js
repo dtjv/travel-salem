@@ -1,6 +1,6 @@
 export const ContainerX = ({ children, ...props }) => (
   <div
-    className={`mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-24 ${
+    className={`mx-auto px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 ${
       props.className ?? ''
     }`}
   >
