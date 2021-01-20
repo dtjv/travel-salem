@@ -5,9 +5,9 @@ import { ContainerX } from './Container'
 export const Hero = () => {
   return (
     <div className="relative">
-      <div className="relative h-96">
+      <div className="relative w-full h-96">
         <Image
-          src="/images/vineyard.jpg"
+          src="/images/vineyard.webp"
           layout="fill"
           objectFit="cover"
           alt="image of vineyard"
