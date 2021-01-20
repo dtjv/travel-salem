@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@fontsource/caveat": "4.1.0",
+    "@fontsource/inter": "4.1.0",
     "@sindresorhus/slugify": "1.1.0",
     "next": "10.0.5",
     "react": "17.0.1",
