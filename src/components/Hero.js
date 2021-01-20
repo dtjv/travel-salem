@@ -7,7 +7,7 @@ export const Hero = () => {
     <div className="relative">
       <div className="relative w-full h-96">
         <Image
-          src="/images/vineyard.webp"
+          src="/images/vineyard.jpg"
           layout="fill"
           objectFit="cover"
           alt="image of vineyard"
