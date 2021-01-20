@@ -14,10 +14,10 @@ export const Hero = () => {
         />
       </div>
       <ContainerX className="absolute top-0">
-        <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl pt-52">
+        <h1 className="text-3xl font-extrabold text-white sm:text-5xl md:text-6xl pt-52">
           Welcome to Salem.
         </h1>
-        <p className="pt-1 text-lg italic font-bold tracking-wide text-white sm:text-2xl md:text-3xl">
+        <p className="pt-1 italic font-bold tracking-wide text-white text-md sm:text-2xl md:text-3xl">
           "The most Oregon part of Oregon!"
         </p>
       </ContainerX>

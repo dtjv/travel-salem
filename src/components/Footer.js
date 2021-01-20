@@ -76,7 +76,7 @@ export const Footer = ({ data }) => {
                 width="16"
                 height="16"
               />
-              <p className="">2021 Travel Salem</p>
+              <p className="ml-1">2021 Travel Salem</p>
             </div>
             <ul className="flex items-center mt-4 sm:mt-0 space-x-3 sm:space-x-6">
               {data.site.social.map((social, idx) => (

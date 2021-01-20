@@ -28,7 +28,9 @@ export const Sponsors = ({ section }) => {
     <ContainerX>
       <ContainerY>
         <div className="pb-8 text-center">
-          <h2 className="text-3xl font-bold tracking-tight">{section.name}</h2>
+          <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
+            {section.name}
+          </h2>
         </div>
         <div className="flex items-center justify-between px-4">
           <ul

@@ -21,8 +21,8 @@ const Item = ({ item }) => {
               </div>
             </div>
             <div className="flex flex-col justify-center px-2 sm:px-4">
-              <p className="font-semibold text-md md:text-lg">{item.name}</p>
-              <p className="text-sm font-medium text-gray-500 md:text-base">
+              <p className="text-sm font-semibold md:text-lg">{item.name}</p>
+              <p className="text-xs font-medium text-gray-500 md:text-base">
                 {`${item.count} vendors`}
               </p>
             </div>

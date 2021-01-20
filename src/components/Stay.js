@@ -11,7 +11,7 @@ const Item = ({ item }) => {
         <a aria-label={`link to ${item.name}`}>
           <div>
             <Image
-              className="rounded-lg"
+              className="rounded-t-lg"
               quality={100}
               src={`/images/${slugify(item.name)}.jpg`}
               alt={`image for ${item.name}`}
@@ -20,7 +20,11 @@ const Item = ({ item }) => {
               height={500}
             />
           </div>
-          <h3 className="mt-2 text-xl font-semibold">{item.name}</h3>
+          <div className="p-2 bg-gray-900 rounded-b-lg md:p-4 lg:py-6">
+            <p className="font-semibold text-md sm:text-xl lg:text-2xl">
+              {item.name}
+            </p>
+          </div>
         </a>
       </Link>
     </li>
@@ -31,7 +35,7 @@ export const Stay = ({ section }) => {
   const links = section.links.map((link, idx) => <Item key={idx} item={link} />)
 
   return (
-    <ContainerX className="bg-gray-900">
+    <ContainerX className="bg-black">
       <ContainerY className="text-white">
         <div className="pb-6">
           <div className="flex items-baseline justify-between pb-2">

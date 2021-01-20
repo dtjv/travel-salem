@@ -8,7 +8,7 @@ const Item = ({ item }) => {
     <li>
       <Link href="/">
         <a aria-label={`link to ${item.name}`}>
-          <div className="flex flex-col items-center px-4 py-8 bg-white border border-gray-300 rounded-lg hover:shadow-md">
+          <div className="flex flex-col items-center px-2 py-8 bg-white border border-gray-300 rounded-lg hover:shadow-md">
             <img
               src={`/images/icons/${slugify(item.name)}.svg`}
               alt={`icon for ${item.name}`}
@@ -16,7 +16,7 @@ const Item = ({ item }) => {
               width="40"
               height="40"
             />
-            <p className="mt-2 text-base font-semibold sm:text-md">
+            <p className="mt-2 text-sm font-semibold sm:text-md md:text-lg">
               {item.name}
             </p>
           </div>

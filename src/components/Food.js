@@ -48,7 +48,13 @@ export const Food = ({ section }) => {
           </div>
           <p className="font-medium text-gray-500">{section.description}</p>
         </div>
-        <ul className="overflow-x-auto grid grid-cols-custom hide-scrollbar grid-rows-1 gap-x-4 grid-flow-col">
+        <ul
+          className="overflow-x-auto grid hide-scrollbar grid-rows-1 gap-x-4 grid-flow-col"
+          style={{
+            gridTemplateColumns: `repeat(${section.links.length}, minmax(250px, 1fr))`,
+            columnGap: '1.50rem',
+          }}
+        >
           {links}
         </ul>
       </ContainerY>
