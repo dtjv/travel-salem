@@ -36,14 +36,14 @@ export const Vendors = ({ section }) => {
           <p className="font-medium text-gray-500">{section.description}</p>
         </div>
         <div className="flex flex-col">
-          <ul
+          <div
             className="overflow-x-auto border-b grid hide-scrollbar grid-rows-1 gap-x-4 lg:gap-x-8 grid-flow-col"
             style={{
               gridTemplateColumns: `repeat(${section.links.length}, minmax(150px, 1fr))`,
             }}
           >
             {links}
-          </ul>
+          </div>
           <div className="pt-4">
             <ul className="grid grid-cols-2 gap-x-2 sm:gap-x-4 gap-y-8 md:gap-y-10 sm:grid-cols-3">
               {section.links
