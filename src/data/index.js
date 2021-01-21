@@ -66,17 +66,694 @@ export const data = {
       ],
     },
     vendors: {
-      name: 'Industry',
+      name: 'Local Industry',
       description: '',
       links: [
-        { name: 'Contractors', count: 5 },
-        { name: 'Education', count: 15 },
-        { name: 'Financial', count: 9 },
-        { name: 'Medical', count: 20 },
-        { name: 'Pets', count: 10 },
-        { name: 'Real Estate', count: 18 },
-        { name: 'Transit', count: 6 },
-        { name: 'Utilities', count: 5 },
+        {
+          name: 'Contractors',
+          vendors: [
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Contractors Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+          ],
+        },
+        {
+          name: 'Education',
+          vendors: [
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Education Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+          ],
+        },
+        {
+          name: 'Financial',
+          vendors: [
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Financial Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+          ],
+        },
+        {
+          name: 'Medical',
+          vendors: [
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Medical Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+          ],
+        },
+        {
+          name: 'Pets',
+          vendors: [
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Pets Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+          ],
+        },
+        {
+          name: 'Real Estate',
+          vendors: [
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Real Estate Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+          ],
+        },
+        {
+          name: 'Transit',
+          vendors: [
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Transit Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+          ],
+        },
+        {
+          name: 'Utilities',
+          vendors: [
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+            {
+              name: "Utilities Org's Name",
+              description: 'A short description',
+              phone: '(555) 555-5555',
+            },
+          ],
+        },
       ],
     },
     todo: {
