@@ -13,12 +13,6 @@ module.exports = {
       colors: {
         gray: colors.trueGray,
       },
-      spacing: {
-        112: '28rem',
-        120: '30rem',
-        144: '36rem',
-        180: '45rem',
-      },
     },
   },
   variants: {
