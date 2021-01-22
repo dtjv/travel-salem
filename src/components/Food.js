@@ -6,10 +6,10 @@ import { ContainerX, ContainerY } from './Container'
 
 const Item = ({ item }) => {
   return (
-    <li>
-      <Link href="/">
-        <a aria-label={`link to ${item.name}`}>
-          <div>
+    <li className="flex-grow-0 flex-shrink-0 first:-mr-4 sm:first:mr-4 lg:first:mr-10 xl:first:mr-24 first:w-0 last:w-0 w-36 last:pr-6 sm:last:pr-10 md:last:pr-14 lg:last:pr-24 xl:last:pr-36">
+      {!item.name ? null : (
+        <Link href="/">
+          <a aria-label={`link to ${item.name}`}>
             <Image
               className="rounded-lg"
               quality={100}
@@ -19,44 +19,39 @@ const Item = ({ item }) => {
               width={500}
               height={500}
             />
-          </div>
-          <h3 className="mt-2 text-xl font-semibold">{item.name}</h3>
-        </a>
-      </Link>
+            <h3 className="mt-2 text-xl font-semibold text-gray-800">
+              {item.name}
+            </h3>
+          </a>
+        </Link>
+      )}
     </li>
   )
 }
 
 export const Food = ({ section }) => {
+  section.links.unshift({})
+  section.links.push({})
+
   const links = section.links.map((link, idx) => <Item key={idx} item={link} />)
 
   return (
-    <ContainerX>
-      <ContainerY className="text-gray-800">
+    <ContainerY>
+      <ContainerX>
         <div className="pb-6">
           <div className="flex items-baseline justify-between pb-2">
-            <h2 className="text-2xl font-bold sm:text-3xl">{section.name}</h2>
-            {/* i'm displaying all food links for now.
-            <Link href="/">
-              <a aria-label={`link to view all items in ${section.name}`}>
-                <p className="text-lg font-semibold sm:text-xl">
-                  View all -&gt;
-                </p>
-              </a>
-            </Link>
-            */}
+            <h2 className="text-2xl font-bold text-gray-800 sm:text-3xl">
+              {section.name}
+            </h2>
           </div>
           <p className="font-medium text-gray-500">{section.description}</p>
         </div>
-        <ul
-          className="overflow-x-auto grid hide-scrollbar grid-rows-1 gap-x-4 lg:gap-x-8 grid-flow-col"
-          style={{
-            gridTemplateColumns: `repeat(${section.links.length}, minmax(250px, 1fr))`,
-          }}
-        >
+      </ContainerX>
+      <div>
+        <ul className="flex justify-between overflow-x-auto space-x-8 lg:space-x-10 hide-scrollbar flex-nowrap">
           {links}
         </ul>
-      </ContainerY>
-    </ContainerX>
+      </div>
+    </ContainerY>
   )
 }

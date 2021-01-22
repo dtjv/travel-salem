@@ -16,7 +16,11 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      margin: ['responsive', 'first', 'last'],
+      padding: ['responsive', 'first', 'last'],
+      width: ['responsive', 'first', 'last'],
+    },
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 }

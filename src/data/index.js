@@ -49,7 +49,7 @@ export const data = {
         { name: 'Vegetarian' },
         { name: 'Desserts' },
         { name: 'Steaks & BBQ' },
-        { name: 'International Cuisine' },
+        { name: 'International' },
       ],
     },
     stay: {
