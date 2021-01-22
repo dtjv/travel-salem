@@ -6,27 +6,23 @@ import { ContainerX } from './Container'
 export const Vendors = ({ section }) => {
   const [vendor, setVendor] = useState(section.links[0].name)
 
-  section.links.push({})
-
   const links = section.links.map((link, idx) => {
     return (
       <li
         key={idx}
-        className="flex-grow-0 flex-shrink-0 last:w-8 md:last:w-20 lg:last:w-0"
+        className="inline-block mx-6 md:mx-10 first:ml-0 last:mr-24 md:last:mr-28 lg:last:mr-36"
       >
-        {!link.name ? null : (
-          <div onClick={() => setVendor(link.name)}>
-            <p className="pb-2 font-semibold text-gray-900 cursor-pointer">
-              <span
-                className={`
+        <div onClick={() => setVendor(link.name)}>
+          <p className="pb-2 font-semibold text-gray-900 cursor-pointer">
+            <span
+              className={`
             pb-2 ${vendor === link.name ? 'border-b-2 border-gray-800' : ''}
           `}
-              >
-                {link.name}
-              </span>
-            </p>
-          </div>
-        )}
+            >
+              {link.name}
+            </span>
+          </p>
+        </div>
       </li>
     )
   })
@@ -42,7 +38,7 @@ export const Vendors = ({ section }) => {
         </div>
       </ContainerX>
       <div className="pl-4 sm:pl-8 md:pl-12 lg:pl-20 xl:pl-32">
-        <ul className="flex justify-between overflow-x-auto space-x-10 hide-scrollbar flex-nowrap">
+        <ul className="overflow-x-auto hide-scrollbar whitespace-nowrap">
           {links}
         </ul>
       </div>
