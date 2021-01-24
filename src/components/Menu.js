@@ -13,7 +13,7 @@ export const Menu = ({ data, showMenu, onClick }) => {
 
   return (
     <div className={`inset-0 z-20 ${showMenu ? 'fixed' : 'hidden'}`}>
-      <div className="relative flex flex-col w-full h-full max-w-full max-h-full bg-white">
+      <div className="relative flex flex-col w-full h-full max-w-full max-h-full bg-gray-50">
         <div className="flex items-center justify-between flex-shrink-0 px-4 py-4 border-b border-gray-200 sm:px-8">
           <button
             aria-label="button to close menu"

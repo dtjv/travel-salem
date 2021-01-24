@@ -14,7 +14,7 @@ export const Footer = ({ data }) => {
   ].map((section, idx) => <Section key={idx} section={section} />)
 
   return (
-    <footer className="text-sm bg-gray-100 border-t border-gray-300">
+    <footer className="text-sm border-t border-gray-300 bg-gray-50">
       <ContainerX>
         <ContainerY className="divide-y divide-gray-200 space-y-8">
           <ul className="grid gap-x-2 gap-y-10 sm:gap-x-4 md:gap-x-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
