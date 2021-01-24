@@ -11,12 +11,12 @@ const Item = ({ item }) => {
         <a aria-label={`link to ${item.name}`}>
           <Image
             className="rounded-lg"
-            quality={100}
+            quality={75}
             src={`/images/${slugify(item.name)}.jpg`}
             alt={`image for ${item.name}`}
             layout="responsive"
-            width={500}
-            height={500}
+            width={400}
+            height={400}
           />
           <h3 className="mt-2 text-xl font-semibold text-gray-800">
             {item.name}
