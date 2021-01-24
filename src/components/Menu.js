@@ -1,32 +1,15 @@
-import Link from 'next/link'
+import { Section } from './Section'
 
 export const Menu = ({ data, showMenu, onClick }) => {
   const { food, todo, stay, vendors, company, support } = data.sections
-  const sections = [food, todo, stay, vendors, company, support].map(
-    (section, i) => {
-      return (
-        <li key={i} className="space-y-5">
-          <p className="font-semibold text-gray-900 uppercase">
-            {section.name}
-          </p>
-          <ul className="text-gray-500 space-y-4">
-            {section.links.map((link, idx) => (
-              <li key={idx}>
-                <Link href="/">
-                  <a
-                    aria-label={`link to ${link.name}`}
-                    className="hover:underline"
-                  >
-                    {link.name}
-                  </a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </li>
-      )
-    }
-  )
+  const sections = [
+    food,
+    todo,
+    stay,
+    vendors,
+    company,
+    support,
+  ].map((section, idx) => <Section key={idx} section={section} />)
 
   return (
     <div className={`inset-0 z-20 ${showMenu ? 'fixed' : 'hidden'}`}>
@@ -52,9 +35,11 @@ export const Menu = ({ data, showMenu, onClick }) => {
             </svg>
           </button>
         </div>
-        <ul className="flex-auto px-4 py-8 mb-8 overflow-y-auto hide-scrollbar space-y-8 sm:px-8">
-          {sections}
-        </ul>
+        <div className="flex-auto px-4 py-8 mb-8 overflow-y-auto">
+          <ul className="grid gap-x-2 gap-y-10 sm:gap-x-4 grid-cols-2 sm:grid-c ols-3">
+            {sections}
+          </ul>
+        </div>
       </div>
     </div>
   )

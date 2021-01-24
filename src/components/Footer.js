@@ -1,35 +1,17 @@
-import Link from 'next/link'
-
 import { ContainerX, ContainerY } from './Container'
+import { Section } from './Section'
 import { SocialIcons } from './icons/Social'
 
 export const Footer = ({ data }) => {
   const { food, todo, stay, vendors, company, support } = data.sections
-  const sections = [food, todo, stay, vendors, company, support].map(
-    (section, i) => {
-      return (
-        <li key={i} className="space-y-5">
-          <p className="font-semibold text-gray-900 uppercase">
-            {section.name}
-          </p>
-          <ul className="text-gray-600 space-y-4">
-            {section.links.map((link, idx) => (
-              <li key={idx}>
-                <Link href="/">
-                  <a
-                    aria-label={`link to ${link.name}`}
-                    className="hover:underline"
-                  >
-                    {link.name}
-                  </a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </li>
-      )
-    }
-  )
+  const sections = [
+    food,
+    todo,
+    stay,
+    vendors,
+    company,
+    support,
+  ].map((section, idx) => <Section key={idx} section={section} />)
 
   return (
     <footer className="text-sm bg-gray-100 border-t border-gray-300">
