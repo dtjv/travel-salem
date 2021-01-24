@@ -5,12 +5,12 @@ import { ContainerX } from './Container'
 export const Hero = () => {
   return (
     <div className="relative">
-      <div className="relative w-full h-52 md:h-96">
+      <div className="relative w-full h-52 md:h-96 xl:h-112">
         <Image
-          src="/images/vineyard.jpg"
+          src="/images/hero.jpg"
           layout="fill"
           objectFit="cover"
-          alt="image of vineyard"
+          alt="image of salem"
         />
       </div>
       <ContainerX className="absolute top-0">
