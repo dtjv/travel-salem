@@ -1,71 +1,10 @@
-import { useState } from 'react'
 import Link from 'next/link'
 
 import { ContainerX } from './Container'
 
-export const Nav = ({ data }) => {
-  const [showMenu, setShowMenu] = useState(false)
-  const { food, todo, stay, vendors, company, support } = data.sections
-  const sections = [food, todo, stay, vendors, company, support].map(
-    (section, i) => {
-      return (
-        <li key={i} className="space-y-5">
-          <p className="font-semibold text-gray-900 uppercase">
-            {section.name}
-          </p>
-          <ul className="text-gray-600 space-y-4">
-            {section.links.map((link, idx) => (
-              <li key={idx}>
-                <Link href="/">
-                  <a
-                    aria-label={`link to ${link.name}`}
-                    className="hover:underline"
-                  >
-                    {link.name}
-                  </a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </li>
-      )
-    }
-  )
-
+export const Nav = ({ onClick }) => {
   return (
     <nav>
-      <div
-        className={`py-4 w-3/4 fixed inset-0 z-10 ${
-          showMenu ? 'block' : 'hidden'
-        } h-full bg-white`}
-      >
-        <ContainerX>
-          <div className="relative">
-            <button
-              aria-label="button to close menu"
-              onClick={() => setShowMenu((prevState) => !prevState)}
-            >
-              <svg
-                className="absolute top-0 right-0 w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <ul className="mt-4 overflow-y-auto hide-scrollbar space-y-8">
-            {sections}
-          </ul>
-        </ContainerX>
-      </div>
       <div className="py-3">
         <ContainerX className="flex items-center justify-between">
           <div className="flex">
@@ -81,7 +20,7 @@ export const Nav = ({ data }) => {
             <button
               className="md:hidden"
               aria-label="link to display menu items"
-              onClick={() => setShowMenu((prevState) => !prevState)}
+              onClick={() => onClick((prevState) => !prevState)}
             >
               <svg
                 className="w-6 h-6"
