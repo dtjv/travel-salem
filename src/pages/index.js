@@ -19,7 +19,7 @@ export default function HomePage() {
       <Meta site={data.site} />
       <div className="mx-auto antialiased">
         <Messages messages={messages} />
-        <Nav />
+        <Nav data={data} />
         <Hero />
         <main>
           <Food section={food} />
