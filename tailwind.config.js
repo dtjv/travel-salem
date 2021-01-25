@@ -12,6 +12,10 @@ module.exports = {
       },
       colors: {
         gray: colors.trueGray,
+        teal: colors.teal,
+        cyan: colors.cyan,
+        orange: colors.orange,
+        amber: colors.amber,
       },
       spacing: {
         104: '26rem',
