@@ -47,7 +47,7 @@ export const Intro = () => {
 
           <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-green-400 to-green-600">
             <div>
-              <h3 className="mb-4 text-2xl font-bold text-white">Events</h3>
+              <p className="mb-4 text-2xl font-bold text-white">Events</p>
               <p className="max-w-full text-white prose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -64,9 +64,7 @@ export const Intro = () => {
 
           <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-cyan-400 to-cyan-600">
             <div>
-              <h3 className="mb-4 text-2xl font-bold text-white">
-                Plan a trip
-              </h3>
+              <p className="mb-4 text-2xl font-bold text-white">Plan a trip</p>
               <p className="max-w-full text-white prose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -86,7 +84,7 @@ export const Intro = () => {
 
           <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-amber-400 to-amber-600">
             <div>
-              <h3 className="mb-4 text-2xl font-bold text-white">Our Blog</h3>
+              <p className="mb-4 text-2xl font-bold text-white">Our Blog</p>
               <p className="max-w-full text-white prose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
