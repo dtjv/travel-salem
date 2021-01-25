@@ -5,7 +5,7 @@ export const Intro = () => {
   return (
     <ContainerX>
       <ContainerY>
-        <div className="text-gray-500 text-md leading-7 space-y-5">
+        <div className="max-w-full text-gray-500 text-md prose">
           <p>
             <span className="text-xl font-medium">
               At the center of the Willamette Valley, Salem Oregon
