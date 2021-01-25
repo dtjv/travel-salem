@@ -7,24 +7,26 @@ export const Intro = () => {
       <ContainerY>
         <div className="max-w-full prose">
           <p className="md:text-lg">
-            <span className="text-xl font-medium">Salem</span> is home of the
-            Oregon State Capitol, its urban downtown full of lively shops,
-            restaurants, museums, and attractions. It is also at the heart of
-            one of the most agriculturally productive regions in the world.
-            You'll find some of Oregon’s tastiest berries, hazelnuts, honeys,
-            cheeses, and handcrafted artisan products from chocolates and jams
-            to ciders and blended spirits.
+            <span className="text-xl font-medium">
+              At the center of the Willamette Valley, Salem Oregon
+            </span>{' '}
+            is home of the Oregon State Capitol, its urban downtown full of
+            lively shops, restaurants, museums, and attractions. It is also at
+            the heart of one of the most agriculturally productive regions in
+            the world. You'll find some of Oregon’s tastiest berries, hazelnuts,
+            honeys, cheeses, and handcrafted artisan products from chocolates
+            and jams to ciders and blended spirits.
           </p>
           <p className="md:text-lg">
             Whatever you're looking for, you're likely to find it in Salem. For
-            more information, requests a{' '}
+            more information, please request a{' '}
             <Link href="/">
               <a>Visitor's Guide</a>
             </Link>
             .
           </p>
         </div>
-        <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-2 sm:gap-x-4 lg:gap-x-8 gap-y-6 xl:grid-cols-4">
+        <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-2 sm:gap-x-4 gap-y-6 xl:grid-cols-4">
           <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-orange-200 to-orange-500">
             <div>
               <h3 className="mb-4 text-2xl font-bold">About Salem</h3>
@@ -47,7 +49,6 @@ export const Intro = () => {
               <p className="max-w-full prose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur.
               </p>
             </div>
             <Link href="/">
@@ -63,8 +64,9 @@ export const Intro = () => {
               <p className="max-w-full prose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit
-                amet, consectetur.
+                Lorem ipsum dolor sit amet, consectetur. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
               </p>
             </div>
             <Link href="/">
@@ -76,12 +78,11 @@ export const Intro = () => {
 
           <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-amber-200 to-amber-500">
             <div>
-              <h3 className="mb-4 text-2xl font-bold">Travel Salem's Blog</h3>
+              <h3 className="mb-4 text-2xl font-bold">Our Blog</h3>
               <p className="max-w-full prose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit
-                amet, consectetur. Lorem ipsum dolor sit amet, consectetur.
+                Excepteur sint occaecat cupidatat non proident, sunt in.
               </p>
             </div>
             <Link href="/">
