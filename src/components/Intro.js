@@ -27,41 +27,47 @@ export const Intro = () => {
           </p>
         </div>
         <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-2 sm:gap-x-4 gap-y-6 xl:grid-cols-4">
-          <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-orange-200 to-orange-500">
+          <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-orange-400 to-orange-600">
             <div>
-              <h3 className="mb-4 text-2xl font-bold">About Salem</h3>
-              <p className="max-w-full prose">
+              <p className="mb-4 text-2xl font-bold text-white">About Salem</p>
+              <p className="max-w-full text-white prose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Lorem ipsum dolor sit amet, consectetur.
               </p>
             </div>
-            <Link href="/">
-              <a className="block mt-4 font-medium text-black no-underline hover:text-gray-600">
-                Learn more -&gt;
-              </a>
-            </Link>
+            <div>
+              <Link href="/">
+                <a className="inline-flex items-center justify-center px-4 py-2 mt-4 font-semibold text-white bg-orange-800 rounded-lg bg-opacity-50 hover:bg-opacity-90 focus:outline-none focus:bg-opacity-90">
+                  Learn more
+                </a>
+              </Link>
+            </div>
           </div>
 
-          <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-green-200 to-green-500">
+          <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-green-400 to-green-600">
             <div>
-              <h3 className="mb-4 text-2xl font-bold">Events</h3>
-              <p className="max-w-full prose">
+              <h3 className="mb-4 text-2xl font-bold text-white">Events</h3>
+              <p className="max-w-full text-white prose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <Link href="/">
-              <a className="block mt-4 font-medium text-black no-underline hover:text-gray-600">
-                Find an event -&gt;
-              </a>
-            </Link>
+            <div>
+              <Link href="/">
+                <a className="inline-flex items-center justify-center px-4 py-2 mt-4 font-semibold text-white bg-green-800 rounded-lg bg-opacity-50 hover:bg-opacity-90 focus:outline-none focus:bg-opacity-90">
+                  Find an event
+                </a>
+              </Link>
+            </div>
           </div>
 
-          <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-cyan-200 to-cyan-500">
+          <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-cyan-400 to-cyan-600">
             <div>
-              <h3 className="mb-4 text-2xl font-bold">Plan a trip</h3>
-              <p className="max-w-full prose">
+              <h3 className="mb-4 text-2xl font-bold text-white">
+                Plan a trip
+              </h3>
+              <p className="max-w-full text-white prose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Lorem ipsum dolor sit amet, consectetur. Ut enim ad minim
@@ -69,27 +75,31 @@ export const Intro = () => {
                 aliquip ex ea commodo consequat.
               </p>
             </div>
-            <Link href="/">
-              <a className="block mt-4 font-medium text-black no-underline hover:text-gray-600">
-                Get started -&gt;
-              </a>
-            </Link>
+            <div>
+              <Link href="/">
+                <a className="inline-flex items-center justify-center px-4 py-2 mt-4 font-semibold text-white rounded-lg bg-cyan-800 bg-opacity-50 hover:bg-opacity-90 focus:outline-none focus:bg-opacity-90">
+                  Get started
+                </a>
+              </Link>
+            </div>
           </div>
 
-          <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-amber-200 to-amber-500">
+          <div className="flex flex-col justify-between h-full p-4 rounded-lg bg-gradient-to-br from-amber-400 to-amber-600">
             <div>
-              <h3 className="mb-4 text-2xl font-bold">Our Blog</h3>
-              <p className="max-w-full prose">
+              <h3 className="mb-4 text-2xl font-bold text-white">Our Blog</h3>
+              <p className="max-w-full text-white prose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Excepteur sint occaecat cupidatat non proident, sunt in.
               </p>
             </div>
-            <Link href="/">
-              <a className="block mt-4 font-medium text-black no-underline hover:text-gray-600">
-                Read more -&gt;
-              </a>
-            </Link>
+            <div>
+              <Link href="/">
+                <a className="inline-flex items-center justify-center px-4 py-2 mt-4 font-semibold text-white rounded-lg bg-amber-800 bg-opacity-50 hover:bg-opacity-90 focus:outline-none focus:bg-opacity-90">
+                  Read more
+                </a>
+              </Link>
+            </div>
           </div>
         </div>
       </ContainerY>
