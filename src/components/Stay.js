@@ -6,18 +6,18 @@ import { ContainerX, ContainerY } from './Container'
 
 const Item = ({ item }) => {
   return (
-    <li>
+    <li className="h-full">
       <Link href="/">
         <a aria-label={`link to ${item.name}`}>
           <div>
             <Image
               className="rounded-t-lg"
-              quality={100}
+              quality={75}
               src={`/images/${slugify(item.name)}.jpg`}
               alt={`image for ${item.name}`}
               layout="responsive"
-              width={500}
-              height={500}
+              width={260}
+              height={260}
             />
           </div>
           <div className="p-2 bg-gray-900 rounded-b-lg md:p-4 lg:py-6">
@@ -50,7 +50,7 @@ export const Stay = ({ section }) => {
             </Link>
             */}
           </div>
-          <p className="font-medium text-white">{section.description}</p>
+          <p className="max-w-full text-white prose">{section.description}</p>
         </div>
         <ul className="grid grid-cols-2 gap-x-2 sm:gap-x-4 lg:gap-x-8 gap-y-6 sm:grid-cols-3">
           {links}

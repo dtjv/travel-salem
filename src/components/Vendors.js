@@ -34,7 +34,7 @@ export const Vendors = ({ section }) => {
           <div className="flex items-baseline justify-between pb-2">
             <h2 className="text-2xl font-bold sm:text-3xl">{section.name}</h2>
           </div>
-          <p className="font-medium text-gray-500">{section.description}</p>
+          <p className="max-w-full prose">{section.description}</p>
         </div>
       </ContainerX>
       <div className="pl-4 sm:pl-8 md:pl-12 lg:pl-20 xl:pl-32">
@@ -48,7 +48,7 @@ export const Vendors = ({ section }) => {
             {section.links
               .find((link) => link.name === vendor)
               .vendors.map((v, i) => (
-                <li key={i}>
+                <li key={i} className="h-full">
                   <Link href="/">
                     <a aria-label={`link to ${v.name}`}>
                       <p className="text-sm font-medium text-gray-800">

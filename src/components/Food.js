@@ -39,7 +39,7 @@ export const Food = ({ section }) => {
               {section.name}
             </h2>
           </div>
-          <p className="font-medium text-gray-500">{section.description}</p>
+          <p className="max-w-full prose">{section.description}</p>
         </div>
       </ContainerX>
       <div>
