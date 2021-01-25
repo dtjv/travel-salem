@@ -5,6 +5,7 @@ import { Messages } from '../components/Messages'
 import { Nav } from '../components/Nav'
 import { Menu } from '../components/Menu'
 import { Hero } from '../components/Hero'
+import { Intro } from '../components/Intro'
 import { Food } from '../components/Food'
 import { Todo } from '../components/Todo'
 import { Stay } from '../components/Stay'
@@ -28,6 +29,7 @@ export default function HomePage() {
         <Nav data={data} onClick={setShowMenu} />
         <Hero />
         <main>
+          <Intro />
           <Food section={food} />
           <Todo section={todo} />
           <Stay section={stay} />
