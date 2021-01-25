@@ -2,14 +2,16 @@ import { Section } from './Section'
 
 export const Menu = ({ data, showMenu, onClick }) => {
   const { food, todo, stay, vendors, company, support } = data.sections
-  const sections = [
-    food,
-    todo,
-    stay,
-    vendors,
-    company,
-    support,
-  ].map((section, idx) => <Section key={idx} section={section} />)
+  const sections = [food, todo, stay, vendors, company, support].map(
+    (section, idx) => (
+      <Section
+        key={idx}
+        section={section}
+        showMenu={showMenu} // TODO; remove if not a demo
+        onClick={onClick} // TODO; remove if not a demo
+      />
+    )
+  )
 
   return (
     <div className={`inset-0 z-20 ${showMenu ? 'fixed' : 'hidden'}`}>
