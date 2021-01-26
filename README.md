@@ -1,13 +1,26 @@
 # travelsalem
 
-A design concept for [travelsalem.com](https://travelsalem.com) running
-[Next.js](https://nextjs.org) and [Tailwind CSS](https://tailwindcss.com).
-Deployed on [Vercel](https://vercel.com).
+A design concept for travelsalem.com.
 
-[View demo](https://travelsalem.vercel.app/)
+### [View the demo](https://travelsalem.vercel.app/) | [Read the article](https://dtjv.io/a-redesign-of-travelsalem/)
 
-Read more about my design decisions in my article,
-_["A Redesign of travelsalem.com"](https://dtjv.io/a-redesign-of-travelsalem/)_.
+## Motivation
+
+I felt travelsalem.com's current design dated and the usability somewhat
+cumbersome. I set out to redesign the site to improve the user experience
+through a simpler, performant, modern interface.
+
+My design is responsive, fast and intuitive. This project is one approach and
+meant to spark ideas about how best to improve the website's utility.
+
+## Technology
+
+- [Next.js](https://nextjs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+
+## Author
+
+- [David Valles](https://dtjv.io)
 
 ## License
 
